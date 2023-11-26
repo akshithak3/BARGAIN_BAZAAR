@@ -28,7 +28,8 @@ function Register() {
             });
     }, []);
     function RegisterClick() {
-        console.log(process.env.REACT_APP_BACKEND_URL);
+
+console.log(process.env.REACT_APP_BACKEND_URL);
         axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, {
             username: username,
             name: name,
